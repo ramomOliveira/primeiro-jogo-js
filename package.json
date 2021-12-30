@@ -1,0 +1,28 @@
+{
+  "name": "jogo-js-html-css",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel --plugins @babel/plugin-proposal-json-strings game.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.16.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.5"
+  }
+}
