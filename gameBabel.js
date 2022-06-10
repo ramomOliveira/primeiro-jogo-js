@@ -70,8 +70,8 @@ const update = function (modifier) {
     }
     if (40 in keysDown) {  // Pressionando a seta pra baixo
         hero.y += hero.speed * modifier;
-        if(hero.y > canvas.height){
-            hero.y = canvas.height
+        if(hero.y > canvas.height - 32){
+            hero.y = canvas.height - 32
         }
     }
     if (37 in keysDown) { // Pressionando a seta para esquerda
@@ -82,8 +82,8 @@ const update = function (modifier) {
     }
     if (39 in keysDown) { // Pressionando a seta para direita
         hero.x += hero.speed * modifier;
-        if(hero.x > canvas.width){
-            hero.x = canvas.width 
+        if(hero.x > canvas.width - 32){
+            hero.x = canvas.width - 32
         }
     }
 
