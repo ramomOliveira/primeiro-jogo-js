@@ -64,15 +64,27 @@ const reset = function () {
 const update = function (modifier) {
     if (38 in keysDown) {   // Pressionando a seta pra cima
         hero.y -= hero.speed * modifier;
+        if(hero.y < 0){
+            hero.y = 0
+        }
     }
     if (40 in keysDown) {  // Pressionando a seta pra baixo
         hero.y += hero.speed * modifier;
+        if(hero.y > canvas.height){
+            hero.y = canvas.height
+        }
     }
     if (37 in keysDown) { // Pressionando a seta para esquerda
         hero.x -= hero.speed * modifier;
+        if(hero.x < 0){
+            hero.x = 0
+        }
     }
     if (39 in keysDown) { // Pressionando a seta para direita
         hero.x += hero.speed * modifier;
+        if(hero.x > canvas.width){
+            hero.x = canvas.width 
+        }
     }
 
     // Os personagens se encostaram?
