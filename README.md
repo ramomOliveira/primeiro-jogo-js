@@ -10,7 +10,7 @@
 
 ## Descrição
 
-Jogo em que o Mario tem que pegar a estrala, feito em HTML, CSS e JavaScrip.
+Jogo em que o Mario tem que pegar a estrela, feito em HTML, CSS e JavaScrip.
 Jogo simples feito para pegar os conceitos em programação
 
 
